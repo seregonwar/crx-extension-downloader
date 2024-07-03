@@ -2,7 +2,17 @@
 
 This JavaScript script allows you to easily download Chrome extensions in `.crx` format directly from a web page.
 
-### How the Script Works
+
+## How to Use
+
+1. Open the Chrome Web Store page of the extension you want to download.
+2. Open the browser console (`F12` or `Ctrl+Shift+I`, then select the "Console" tab).
+3. Copy and paste the script into the console and press `Enter`.
+4. The download of the extension in `.crx` format should start automatically."
+
+
+
+## How the Script Works
 
 The script consists of several parts, each with a specific function. Here is a detailed explanation of how it works:
 

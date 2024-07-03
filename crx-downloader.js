@@ -1,6 +1,6 @@
 (function() {
     const extensionId = location.href.split('/').pop().split('?')[0];
-    const manifestUrl = https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx2,crx3&x=id%3D${extensionId}%26installsource%3Dondemand%26uc;
+    const manifestUrl = `https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx2,crx3&x=id%3D${extensionId}%26installsource%3Dondemand%26uc`;
 
     const iframe = document.createElement('iframe');
     iframe.style.display = 'none';
@@ -12,7 +12,7 @@
         if (responseUrl.includes('.crx')) {
             const a = document.createElement('a');
             a.href = responseUrl;
-            a.download = ${extensionId}.crx;
+            a.download = `${extensionId}.crx`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
